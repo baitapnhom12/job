@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huấn CV</title>
+    <link rel="stylesheet" href="./CSS/base.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/repon.css">
+</head>
+
+<body>
+    <div class="wapper">
+        <div class="container">
+            <!-- header -->
+            <header>
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="./index.html">
+                            <img src="./image/logo.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="navbar_mb cursor">
+                        <div class="icon_bar"><i class="fa-solid fa-bars-staggered"></i></div>
+                    </div>
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="./index.html" class="menu-link"><span class="icon_menu"><i
+                                        class="fa-solid fa-house"></i></span>trang chủ</a>
+
+                        </li>
+                        <li class="menu-item">
+
+                            <a href="./about.html" class="menu-link"><span class="icon_menu"><i
+                                        class="fa-solid fa-file-signature"></i></span>giới thiệu</a>
+
+                        </li>
+                        <li class="menu-item">
+                            <a href="./employer.html" class="menu-link"><span class="icon_menu"><i
+                                        class="fa-solid fa-user-plus"></i></span>nhà tuyển dụng</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="./news.html" class="menu-link"><span class="icon_menu"><i
+                                        class="fa-solid fa-radio"></i></span>tin tức</a>
+                        </li>
+                        <!-- <li class="menu-item">
+              <a href="./index.html" class="menu-link"><span class="icon_menu"><i
+                    class="fa-solid fa-address-card"></i></span>liên hệ</a>
+            </li> -->
+                        <li class="menu-item">
+                            <form action="" method="post">
+                                <button type="submit" class="btn_logout btn-none cursor"><span class="icon_menu"><i
+                                            class="fa-solid fa-unlock"></i></span><span>đăng xuất</span></button>
+                            </form>
+                        </li>
+                    </ul>
+                    <form action="" method="" class="navbar_search">
+                        <input type="text" name="keyword" class="input_search btn-none" placeholder="Nhập để tìm kiếm"
+                            autocomplete="off">
+                        <div class="icon_search">
+                            <button type="submit" class="btn_search btn-none"><i
+                                    class="fa-solid fa-magnifying-glass cursor"></i></button>
+                    </form>
+
+                </div>
+            </header>
+            <!-- end---header -->
+        </div>
+        <div class="overlay_mb none">
+            <div class="close cursor"><i class="fa-regular fa-circle-xmark"></i></div>
+        </div>
+        <ul class="menu_mb">
+            <div class="logo margin">
+                <a href="./index.html">
+                    <img src="./image/logo.jpg" alt="">
+                </a>
+            </div>
+            <div class="item_search">
+                <form action="" method="" class="navbar_search form_search_mb"
+                    style="display: flex;justify-content: space-between;">
+                    <input style="flex: 1;" type="text" name="keyword" class="input_search btn-none"
+                        placeholder="Nhập để tìm kiếm" autocomplete="off">
+                    <div class="icon_search">
+                        <button type="submit" class="btn_search btn-none"><i
+                                class="fa-solid fa-magnifying-glass cursor"></i></button>
+                </form>
+            </div>
+            <li class="menu_list_mb">
+                <a href="" class="menu_link_mb"><span class="icon_menu"><i class="fa-solid fa-house"></i></span>TRANG
+                    CHỦ</a>
+            </li>
+            <li class="menu_list_mb">
+                <a href="" class="menu_link_mb"><span class="icon_menu"><i
+                            class="fa-solid fa-file-signature"></i></span>GIỚI
+                    THIỆU</a>
+            </li>
+            <li class="menu_list_mb">
+                <a href="" class="menu_link_mb"><span class="icon_menu"><i class="fa-solid fa-user-plus"></i></span>NHÀ
+                    TUYỂN
+                    DỤNG</a>
+            </li>
+            <li class="menu_list_mb">
+                <a href="" class="menu_link_mb"><span class="icon_menu"><i class="fa-solid fa-radio"></i></span>TIN
+                    TỨC</a>
+            </li>
+            <li class="menu_list_mb">
+                <a class="menu_link_mb"><span class="icon_menu"><i class="fa-solid fa-right-from-bracket"></i></span>Xin
+                    chào
+                    Pham Như Huấn</a>
+            <li class="menu_list_mb">
+                <form action="" method="post">
+                    <button type="submit" class="btn-none cursor" name="log_out">ĐĂNG XUẤT</button>
+                </form>
+            </li>
+            </li>
+        </ul>
+    </div>
+    
+    <!-- overlay_job -->
+
+    <div class="overlay_job none">
+        <div class="apply">
+            <form action="" class="form_apply" id="checkform" method="post">
+                <div class="form_lable"><span><b>Họ và tên</b></span></div>
+                <input type="text" class="input_infor" name="name_customer" placeholder="Nhập tên của bạn">
+                <div class="form_lable"><span><b>Email</b></span></div>
+                <input type="text" class="input_infor" name="email_customer" placeholder="Nhập email của bạn">
+                <div class="form_lable"><span><b>Số điện thoại</b></span></div>
+                <input type="text" class="input_infor" name="phone_customer" placeholder="Nhập số điện thoại">
+                <div class="form_lable"><span><b>CV của bạn</b></span></div>
+                <input type="file" class="input_infor" accept="application/pdf" id="file_input" hidden name="file_customer">
+                <label for="file_input" class="lable_file">
+                    <div class="file_container">
+                        <div class="file_list cursor">
+                            <span class="padding_right"><i class="fa-solid fa-file-pdf"></i></span>
+                            <span id="file_name">Tải CV</span>
+                        </div>
+                    </div>
+                </label>
+                <button type="submit" class="btn_sign input cursor"><span class="padding_right"><i class="fa-solid fa-paper-plane"></i></span>Gửi ngay</button>
+            </form>
+    
+        </div>
+        
+            <div class="close cursor closeform"><i class="fa-regular fa-circle-xmark"></i></div>
+    </div>
+
+     <!-- end overlay_job -->
+
+
+    <div class="container">
+        <!-- content -->
+        <div class="content">
+            <div class="sidebar_left">
+                <section>
+                    <div class="title_left title">
+                        <p><b>Chi tiết việc làm</b></p>
+                    </div>
+                    <div class="title_list">
+                        <p class="title_p"><b>Nhân viên Telesale Partime</b></p>
+                        <p><b>MÔ TẢ CÔNG VIỆC</b></p>
+                        <p>
+                            1. Nghiên cứu hệ thống
+                            - Nghiên cứu Hệ thống vận hành F&B
+                            - Nghiên cứu Hệ thống IT phục vụ vận hành doanh nghiệp F&B
+                            - Đề xuất lựa chọn giải pháp Công nghệ
+
+                            2. Sản xuất và nâng cấp phần mềm
+                            - Phân tích thiết kế: Giải pháp đáp ứng; Quy trình tương lai; Kịch bản kiểm thử
+                            - Xây dựng phần mềm và Kiểm thử nội bộ
+
+                            3. Triển khai phần mềm
+                            - Kiểm thử phần mềm: xây dựng kịch bản kiểm thử và Unit test
+                            - Quản lý các version thay đổi phần mềm
+                            - Chuyển giao và nghiệm thu phần mềm
+                            - Bảo trì, sửa chữa và nâng cấp phần mềm
+
+                            4. Đào tạo: Hỗ trợ đào tạo người dùng sử dụng phần mềm
+
+                            5. Khác: Thực hiện các công việc, hỗ trợ các công việc khác theo yêu cầu của Trưởng phòng và
+                            Ban Giám đốc
+
+                        <p class="title_margin"><b>YÊU CẦU ỨNG VIÊN</b></p>
+                        1. Yêu cầu về kỹ năng - chuyên môn
+                        • Năng lực:
+                        - Kiến thức về hệ quản trị cơ sở dữ liệu
+                        - Kiến thức về vòng đời xây dựng ứng dụng Website
+                        - Kiến thức về mô hình phát triển hướng đối tượng (MVC, MVP, MVVM)
+                        - Kiến thức về GIT
+                        - Kiến thức về ngôn ngữ lập trình HTML5/PHP/Ajax
+                        - Kiến thức, kỹ năng deployment sản phẩm theo phiên bản lên máy chủ
+
+                        • Kỹ năng
+                        - Kỹ năng giao tiếp, trao đổi, trình bày
+                        - Kỹ năng về tích hợp API Restful, SOAP, GraphQL
+
+                        2. Yêu cầu về Trình độ văn hoá
+                        Tốt nghiệp đại học, cao đẳng chuyên ngành CNTT các trường đại học đào tạo chuyên ngành
+
+                        3. Yêu cầu về kinh nghiệm / thâm niên công tác
+                        Tối thiểu 1 năm kinh nghiệm tại vị trí tương đương tại các Doanh nghiệp
+
+                        4. Yêu cầu đặc thù khác
+                        • Độ tuổi: 22-35T
+                        • Tính cách: trung thực, kiên trì, nhiệt huyết, có tinh thần trách nhiệm, cầu tiến, yêu thương
+                        và hỗ trợ đồng đội, năng lượng tích cực.
+                        • Khả năng làm việc độc lập và theo nhóm.
+                        • Sáng tạo, ham học hỏi, có trách nhiệm và khát vọng thăng tiến trong công việc.
+
+                        <p class="title_margin"><b>QUYỀN LỢI DÀNH CHO ỨNG VIÊN:</b></p>
+                        1. Lương: 15tr – 25tr /tháng + Thưởng (Thỏa thuận không giới hạn)
+                        2. Địa điểm làm việc: Văn phòng công ty Aladdin – 69Tố Hữu, Vạn Phúc, Hà Đông
+                        3. Làm việc tại Công ty có hoạt động lớn trong ngành F&B, phát triển nóng
+                        4. Thời gian làm việc: Giờ hành chính (Nghỉ chiều thứ 7 + CN)
+                        5. Chế độ khen thưởng, phúc lợi: Tham gia BHXH đầy đủ; chính sách khen thưởng hàng tháng, năm;
+                        lương tháng 13++++ theo kết quả kinh doanh của công ty; thưởng nhân các ngày lễ/tết trong năm;
+                        nghỉ dưỡng định kỳ.
+                        6. Lương và cơ hội thăng tiến: Hàng năm công ty xem xét và điều chỉnh tăng lương theo kết quả
+                        công việc; đối với những cá nhân có tiềm năng có cơ hội tham gia các dự án của của công ty, xây
+                        dưng quy hoạch cán bộ nguồn và có nhiều cơ hội thăng tiến.
+                        7. Chế độ đào tạo: Được công ty đầu tư tham gia các khóa đào tạo về nghiệp vụ, kỹ năng cần thiết
+                        theo yêu cầu công việc và các khóa học phát huy tiềm năng con người, thay đổi tư duy và cách
+                        thức tiếp cận mọi vấn đề hướng đến văn hóa mang lại hạnh phúc cho mọi nhân viên.
+                        8. Văn hóa Aladdin: Tại Aladdin quan niệm vạn sự khởi nguồn từ con người, con người là tài sản
+                        vô giá, là trung tâm của sự phát triển và động lực để phát triển. Tất cả hoạt động kinh doanh
+                        của Công ty đều chỉ hướng đến kết quả cuối cùng là mang lại hạnh phúc nhân viên và toàn bộ cộng
+                        đồng. Do vậy, phúc lợi lớn nhất bạn được hưởng khi gia nhập vào công ty là gia nhập vào một
+                        DOANH NGHIỆP HẠNH PHÚC.
+                        </p>
+                        <ul class="title_list-desc">
+                            <li><span class="icon_desc"><i class="fa-solid fa-sack-dollar"></i></span>7-20 triệu</li>
+                            <li><span class="icon_desc"><i class="fa-solid fa-location-dot"></i></span>Hà nôi</li>
+                            <li><span class="icon_desc"><i class="fa-solid fa-clock"></i></span>20/6/2022</li>
+                            <li><span class="icon_desc"><i class="fa-solid fa-user"></i></span>5 người</li>
+                            <li><span class="icon_desc"><a><button class="btn_detail cursor on_form">Ứng tuyển</button></a></li>
+                        </ul>
+                    </div>
+
+                </section>
+            </div>
+            <div class="sidebar_right">
+                <aside>
+                    <div class="title_left title">
+                        <p><b>Việc làm theo tỉnh</b></p>
+                    </div>
+                    <a href="./cate.html">
+                        <div class="location">
+                            <p><span><i class="fa-solid fa-flag"></i></span>Hà Nội</p>
+                        </div>
+                    </a>
+                    <a href="./cate.html">
+                        <div class="location">
+                            <p><span><i class="fa-solid fa-flag"></i></span>Hà Nội</p>
+                        </div>
+                    </a>
+                    <a href="./cate.html">
+                        <div class="location">
+                            <p><span><i class="fa-solid fa-flag"></i></span>Hà Nội</p>
+                        </div>
+                    </a>
+                    <a href="./cate.html">
+                        <div class="location">
+                            <p><span><i class="fa-solid fa-flag"></i></span>Hà Nội</p>
+                        </div>
+                    </a>
+                    <div class="img_location">
+                        <img src="./image/sidebar1.jpg" alt="">
+                    </div>
+                    <div class="img_location">
+                        <img src="./image/sidebar2.jpg" alt="">
+                    </div>
+                    <div class="img_location">
+                        <img src="./image/sidebar3.jpg" alt="">
+                    </div>
+                    <div class="img_location">
+                        <img src="./image/sidebar4.jpg" alt="">
+                    </div>
+
+                </aside>
+            </div>
+        </div>
+        <!-- end-content -->
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="footer-column">
+                    <h3 class="footer-heading">Về chúng tôi</h3>
+                    <ul class="footer-links">
+                        <li>
+                            Trang tin tuyển dụng việc làm lớn nhất Thái Bình được khởi chạy từ tháng 8/2023 nhằm cung
+                            cấp thông tin
+                            tuyển dụng chính xác
+                        </li>
+                        <li>
+                            Đây là website xin việc do Phạm Như Huấn làm demo cho nhà tuyển dụng xem áp dụng ngôn ngữ
+                            Laravel
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Thông tin liên hệ</h3>
+                    <ul class="footer-links">
+                        <li>
+                            Công ty TNHH Truyền thông số Huấn CV
+                        </li>
+                        <li>
+                            <span><i class="fa-solid fa-phone-volume"></i></span>Điện thoại: 038.267.9151
+                        </li>
+                        <li>
+                            <span><i class="fa-solid fa-envelope-circle-check"></i></span>Email: phuan3366@gmail.com
+                        </li>
+                        <li>
+                            <span><i class="fa-solid fa-globe"></i></span>Website: huanbackend.000webhostapp.com
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 class="footer-heading">Liên hệ đăng tin tuyển dụng</h3>
+                    <ul class="footer-links">
+                        <li>
+                            Chịu trách nhiệm toàn quyền đăng tin tuyển dụng ứng viên thông qua - Phạm Như Huấn
+                        </li>
+                        <li>
+                            Liên hệ với chúng tôi qua các nền tảng mạng xã hội
+                        </li>
+                        <div class="footer_sosial">
+                            <div class="footer_icon cursor">
+                                <div class="icon_child">
+                                    <i class="fa-brands fa-google-plus-g color_icon"></i>
+                                </div>
+                            </div>
+                            <div class="footer_icon cursor">
+                                <div class="icon_child">
+                                    <i class="fa-brands fa-tiktok color_icon"></i>
+                                </div>
+                            </div>
+                            <div class="footer_icon cursor">
+                                <div class="icon_child">
+                                    <i class="fa-brands fa-instagram color_icon"></i>
+                                </div>
+                            </div>
+                            <div class="footer_icon cursor">
+                                <div class="icon_child">
+                                    <i class="fa-brands fa-youtube color_icon"></i>
+                                </div>
+                            </div>
+                            <div class="footer_icon cursor">
+                                <div class="icon_child">
+                                    <i class="fa-brands fa-twitter color_icon"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.js" integrity="sha256-JlqSTELeR4TLqP0OG9dxM7yDPqX1ox/HfgiSLBj8+kM=" crossorigin="anonymous"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="./Script/index.js"></script>
+    <script src="./Script/check.js"></script>
+    
+</body>
+
+</html>
